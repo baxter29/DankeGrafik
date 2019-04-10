@@ -1,0 +1,170 @@
+$txt_up : uppercase
+
+.d-f
+	display: flex
+
+.d-b
+	display: block
+
+.wrap
+	flex-wrap: wrap
+
+.text-center
+	text-align: center
+
+
+.p-5
+	padding: 0 5%
+
+*
+	margin: 0
+	padding: 0
+ul
+
+	li
+		list-style: none
+
+
+
+	
+
+.container
+	max-width: 1400px
+	margin: 0 auto
+
+
+body, html
+	font-size: 16px
+	font-family: 'Titillium Web', sans-serif;
+	line-height: 28px
+	height: 100%
+	max-width: 1920px
+	width: 100%
+	margin: 0 auto
+	.header
+		background-color: #064c56
+		border-bottom: 10px solid #d2b478
+		.logo
+			display: block
+			margin-left: 6%
+			padding: 10px 0
+
+main
+	.slider
+		width: 100%
+		height: 82vh
+		.slides
+			width: inherit
+			height: inherit
+			.slide
+				width: inherit
+				height: inherit
+				background-repeat: no-repeat
+				background-position: center
+				background-size: cover
+				.slide__txt
+					.slide__items
+						display: flex
+						flex-direction: column
+						.slide__item
+							width: max-content
+							background-color: #f7913f
+							display: inline-block
+	
+
+	.services
+		padding: 0 5%
+		.container
+			.services__title
+				color: #f7913f
+				font: 30px/80px "Mangal" , sans-serif;
+				font-weight: bold
+				text-transform: uppercase
+				letter-spacing: 3px
+			.services__items
+				@extend .d-f
+				justify-content: space-between
+				flex-wrap: wrap
+				align-items: baseline
+				.services__item
+					text-align: center
+					max-width: 320px
+					flex-basis: 33%
+					.services__item-title
+						color: #064c56
+						font: 20px/80px "Mangal" , sans-serif
+						font-weight: bold
+						line-height: 80px
+						text-decoration: underline
+						font-variant: small-caps
+						letter-spacing: 2px
+						white-space: nowrap
+						
+					.services__item-text
+						color: #000000
+						font: 20px/30px "Mangal" , sans-serif
+						font-weight: bold
+						font-variant: small-caps
+						letter-spacing: 2px
+	
+	.offers
+		.container
+			@extend .p-5
+			.offers__title
+				color: #f7913f
+				font: 30px/80px "Mangal" , sans-serif
+				font-weight: bold
+				line-height: 80px
+				text-transform: uppercase
+				/* Text style for "Zahlungska" */
+				letter-spacing: 3px
+		
+			.offer__item
+
+				margin-bottom: 50px
+				.offer__item-title
+					color: #024a5b
+					font:25px/30px 'Mangal' , sans-serif
+					font-weight: bold
+					font-variant: small-caps
+					letter-spacing: 2.5px
+					margin: 15px 0 20px 0
+			
+				.offer-wrapper
+					@extend .d-f
+					justify-content: space-between
+					align-items: center
+					div
+						.offer__description
+							color: #000000
+							font: 20px/30px "Mangal" , sans-serif
+							font-weight: bold
+							font-variant: small-caps
+							letter-spacing: 2px
+							margin-bottom: 20px
+
+				.offer__image
+					width: 250px
+					height: 158px
+					@extend .d-b
+					margin-left: 25px
+
+
+
+.footer
+	background-color: #2a3b43
+	.container
+		.footer__items
+			@extend .d-f , .p-5
+			padding-top: 15px
+			padding-bottom: 15px
+			align-items: center
+			justify-content: space-evenly
+			.footer__item
+
+		
+
+
+
+
+
