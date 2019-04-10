@@ -135,20 +135,29 @@ main .services {
     -webkit-box-align: baseline;
     -ms-flex-align: baseline;
     align-items: baseline; }
+    @media screen and (max-width: 764px) {
+      main .services .container .services__items {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; } }
     main .services .container .services__items .services__item {
       text-align: center;
       max-width: 320px;
-      -ms-flex-preferred-size: 33%;
-      flex-basis: 33%; }
+      margin-bottom: 25px; }
+      @media screen and (max-width: 764px) {
+        main .services .container .services__items .services__item {
+          margin-bottom: 50px; } }
       main .services .container .services__items .services__item .services__item-title {
         color: #064c56;
-        font: 20px/80px "Mangal" , sans-serif;
+        font: 20px/30px "Mangal" , sans-serif;
         font-weight: bold;
-        line-height: 80px;
         text-decoration: underline;
         font-variant: small-caps;
         letter-spacing: 2px;
         white-space: nowrap; }
+        @media screen and (max-width: 764px) {
+          main .services .container .services__items .services__item .services__item-title {
+            white-space: normal; } }
       main .services .container .services__items .services__item .services__item-text {
         color: #000000;
         font: 20px/30px "Mangal" , sans-serif;
@@ -164,9 +173,18 @@ main .offers .container .offers__title {
   text-transform: uppercase;
   /* Text style for "Zahlungska" */
   letter-spacing: 3px; }
+  @media screen and (max-width: 764px) {
+    main .offers .container .offers__title {
+      text-align: center; } }
 
 main .offers .container .offer__item {
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  -webkit-box-shadow: 0 0 5px;
+  box-shadow: 0 0 5px; }
+  @media screen and (max-width: 764px) {
+    main .offers .container .offer__item {
+      margin: 25px 0 25px 0;
+      padding-top: 20px; } }
   main .offers .container .offer__item .offer__item-title {
     color: #024a5b;
     font: 25px/30px "Mangal", sans-serif;
@@ -174,13 +192,26 @@ main .offers .container .offer__item {
     font-variant: small-caps;
     letter-spacing: 2.5px;
     margin: 15px 0 20px 0; }
+    @media screen and (max-width: 764px) {
+      main .offers .container .offer__item .offer__item-title {
+        text-align: center; } }
   main .offers .container .offer__item .offer-wrapper {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+    @media screen and (max-width: 764px) {
+      main .offers .container .offer__item .offer-wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; } }
     main .offers .container .offer__item .offer-wrapper div .offer__description {
       color: #000000;
       font: 20px/30px "Mangal" , sans-serif;
@@ -188,10 +219,20 @@ main .offers .container .offer__item {
       font-variant: small-caps;
       letter-spacing: 2px;
       margin-bottom: 20px; }
+      @media screen and (max-width: 764px) {
+        main .offers .container .offer__item .offer-wrapper div .offer__description {
+          text-align: center; } }
   main .offers .container .offer__item .offer__image {
     width: 250px;
     height: 158px;
     margin-left: 25px; }
+    @media screen and (max-width: 764px) {
+      main .offers .container .offer__item .offer__image {
+        margin-left: 0;
+        -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+        order: -1;
+        margin: 30px 0; } }
 
 .footer {
   background-color: #2a3b43; }
@@ -203,4 +244,9 @@ main .offers .container .offer__item {
     align-items: center;
     -webkit-box-pack: space-evenly;
     -ms-flex-pack: space-evenly;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    @media screen and (max-width: 764px) {
+      .footer .container .footer__items .footer__item {
+        margin: 25px 20px; } }
