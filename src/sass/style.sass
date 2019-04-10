@@ -62,14 +62,62 @@ main
 				background-repeat: no-repeat
 				background-position: center
 				background-size: cover
+				position: relative
+				top: 0
+				left: 0
+
 				.slide__txt
+					position: absolute
+					bottom: 0
+					left: 0
+					.slide__rect
+						width: 186px
+						height: 159px
+						position: absolute
+						top: -78px
+						background-repeat: no-repeat
+						background-position: center
+						background-size: cover
+						left: 491px
+						&-txt
+							position: absolute
+							top: 55px
+							left: 32px
+							transform: rotate(-25deg)
+							color: #ffffff
+							font: 16px/16px "Mangal" ,sans-serif;
+							font-weight: bold
+							text-transform: uppercase
+							letter-spacing: 2px
+							@extend .d-f
+							align-items: center
+							span
+								@extend .d-b
+								&:first-child
+									font-size: 29px
+									margin-right: 5px
 					.slide__items
 						display: flex
 						flex-direction: column
 						.slide__item
 							width: max-content
 							background-color: #f7913f
-							display: inline-block
+							color: #ffffff
+							font: 45px/80px "Mangal" ,sans-serif;
+							font-weight: bold
+							text-transform: uppercase
+							letter-spacing: 4.5px
+							&:nth-child(1)
+								color: #064c56
+								padding: 0 51% 0 38%
+							&:nth-child(2)
+								padding: 0 7% 0 16%
+							&:nth-child(3)
+								padding: 0 7% 0 40%
+							&:nth-child(4)
+								padding: 0 7% 0 40%
+							&:nth-child(5)
+								padding: 0 7% 0 37%			
 	
 
 	.services
