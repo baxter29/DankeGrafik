@@ -45,19 +45,45 @@ body, html {
 
 main .slider {
   width: 100%;
-  height: 82vh; }
+  height: 82vh;
+  outline: 3px solid yellow;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
   main .slider .slides {
     width: inherit;
-    height: inherit; }
+    height: inherit;
+    position: relative; }
+    main .slider .slides .slider__navigation .slider-bullets {
+      text-align: center;
+      position: absolute;
+      z-index: 100;
+      bottom: 0;
+      left: 0;
+      right: 0; }
+      main .slider .slides .slider__navigation .slider-bullets .slider-bullet {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background-color: #bbb;
+        border-radius: 50%;
+        margin: 0 3px;
+        cursor: pointer;
+        -webkit-transition: .3s;
+        transition: .3s; }
+        main .slider .slides .slider__navigation .slider-bullets .slider-bullet:hover, main .slider .slides .slider__navigation .slider-bullets .slider-bullet.active {
+          background-color: #999; }
     main .slider .slides .slide {
       width: inherit;
       height: inherit;
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      position: relative;
+      position: absolute;
       top: 0;
-      left: 0; }
+      left: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
       main .slider .slides .slide .slide__txt {
         position: absolute;
         bottom: 0;
@@ -178,13 +204,13 @@ main .offers .container .offers__title {
       text-align: center; } }
 
 main .offers .container .offer__item {
-  margin-bottom: 50px;
-  -webkit-box-shadow: 0 0 5px;
-  box-shadow: 0 0 5px; }
+  margin-bottom: 50px; }
   @media screen and (max-width: 764px) {
     main .offers .container .offer__item {
       margin: 25px 0 25px 0;
-      padding-top: 20px; } }
+      padding-top: 20px;
+      -webkit-box-shadow: 0 0 5px;
+      box-shadow: 0 0 5px; } }
   main .offers .container .offer__item .offer__item-title {
     color: #024a5b;
     font: 25px/30px "Mangal", sans-serif;
